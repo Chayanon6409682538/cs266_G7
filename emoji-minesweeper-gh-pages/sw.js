@@ -1,4 +1,4 @@
-var APP_PREFIX = 'EmojiMinesweeper'
+/*var APP_PREFIX = 'EmojiMinesweeper'
 var VERSION = 'v0.0.2'
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [
@@ -53,3 +53,4 @@ self.addEventListener('activate', function (e) {
     })
   )
 })
+*/

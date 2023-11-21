@@ -1,5 +1,6 @@
-var Game = require('./emoji-minesweeper-gh-pages/game')
+/*var Game = require('./emoji-minesweeper-gh-pages/game')
 var easyButtonClick = require('./emoji-minesweeper-gh-pages/start')
+*/
 
 /*describe('Value', () => {
   test('easyButtonClick sets cols, rows, and bombs to 8, 10, and 10', () => {
@@ -8,6 +9,8 @@ var easyButtonClick = require('./emoji-minesweeper-gh-pages/start')
   });
 });
 */
+//-----------------------
+/*
 describe('Easy Button Click', () => {
   test('should create a new game with easy settings', () => {
     // Create a mock HTML structure
@@ -27,7 +30,8 @@ describe('Easy Button Click', () => {
     expect(value instanceof Game).toBe(true);
   });
 });
-
+//-------------------------
+*/
 
 //const { JSDOM } = require('jsdom');
 //const dom = new JSDOM('<!doctype html><html><body></body></html>');

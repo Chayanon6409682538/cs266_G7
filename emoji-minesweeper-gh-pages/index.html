@@ -451,7 +451,7 @@
   <body>
     <div class="container">
     <div class="wrapper">
-      <button type="button" class="settings js-settings" aria-haspopup="true" aria-expanded="false" aria-label="Settings"></button>
+      <button type="button" id = "settings" class="settings js-settings" aria-haspopup="true" aria-expanded="false" aria-label="Settings"></button>
       <div class="js-settings-popup1 settings-popup1" >
         <div class="mode">
           <button class="button-easy" type="button">EASY</button>
@@ -499,14 +499,14 @@
     
   
     <script>
-      if (navigator.serviceWorker) navigator.serviceWorker.register('/emoji-minesweeper/sw.js')
+      //if (navigator.serviceWorker) navigator.serviceWorker.register('/emoji-minesweeper/sw.js')
     </script>
 
     <!-- haiiii https://github.com/twitter/twemoji is awesome -->
     <script src="twemoji.js"></script>
     <script src="game.js"></script>
     <script src="start.js"></script>
-    <script src="unit.test.js"></script>
+    <!--<script src="unit.test.js"></script> -->
 
 
     <script>

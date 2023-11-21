@@ -21,30 +21,34 @@ function initializeGame() {
     document.querySelector('.js-settings').addEventListener('click', settingsClick);
   }
   function easyButtonClick() {
-   // clearInterval(game.timer);
+    clearInterval(game.timer);
     //var Game = require('./game.js')
     emojiset = document.getElementById('emojiset').value.split(' ');
-    console.log(emojiset);
-    const cols = 8;
+    const cols = 10;
     const rows = 10;
     const bombs = 10;
     game = new Game(cols, rows, bombs, emojiset, document.getElementById('twemoji').checked);
     document.querySelector('.js-settings-popup1').classList.remove('show'); 
-    return true;
-    
+    console.log(bombs);
   }
   
   function normalButtonClick() {
-    //clearInterval(game.timer);
+    clearInterval(game.timer);
     emojiset = document.getElementById('emojiset').value.split(' ');
-    game = new Game(14, 18, 40, emojiset, document.getElementById('twemoji').checked);
+    const cols = 15;
+    const rows = 15;
+    const bombs = 45;
+    game = new Game(cols, rows, bombs, emojiset, document.getElementById('twemoji').checked);
     document.querySelector('.js-settings-popup1').classList.remove('show');
   }
   
   function hardButtonClick() {
-    //clearInterval(game.timer);
+    clearInterval(game.timer);
     emojiset = document.getElementById('emojiset').value.split(' ');
-    game = new Game(20, 24, 99, emojiset, document.getElementById('twemoji').checked);
+    const cols = 20;
+    const rows = 20;
+    const bombs = 120;
+    game = new Game(cols, rows, bombs, emojiset, document.getElementById('twemoji').checked);
     document.querySelector('.js-settings-popup1').classList.remove('show');
   }
   
@@ -74,7 +78,7 @@ function initializeGame() {
   }
   
   function restart() {
-    //clearInterval(game.timer);
+    clearInterval(game.timer);
     emojiset = document.getElementById('emojiset').value.split(' ');
     game = new Game(cols.value, rows.value, bombs.value, emojiset, document.getElementById('twemoji').checked);
     document.querySelector('.js-settings-popup').classList.remove('show');
@@ -84,5 +88,5 @@ function initializeGame() {
   // เรียกใช้ฟังก์ชัน initializeGame เมื่อโหลดหน้าเว็บ
   document.addEventListener('DOMContentLoaded', initializeGame);
 
-  module.exports=easyButtonClick;
+  
   

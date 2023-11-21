@@ -311,4 +311,3 @@ console.log('Use: `new Game(cols, rows, bombs, [emptyemoji, bombemoji, flagemoji
 console.log(' Eg: `game = new Game(10, 10, 10, ["🌱", "💥", "🚩", "◻️"], false)`')
 console.log(' Or: `game = new Game(16, 16, 30, ["🐣", "💣", "🚧", "◻️"], true)`')  
 
-module.exports = Game;
