@@ -29,12 +29,49 @@
     height: auto;
     z-index: -1;
     }
+    /* .classic and .countdown Common Styles */
+/* .classic and .countdown Common Styles */
+.classic, .countdown {
+    font-family: "Open Sans", sans-serif;
+    top: 20%;
+    left: 32%;
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+/* .classic and .countdown in Active State */
+.classic:active, .countdown:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 25%;
+    left: 32%;
+}
+
+/* Media Query for screens with width greater than or equal to 788px */
+@media (min-width: 788px) {
+    .classic, .countdown {
+        width: 300px; /* ปรับความกว้างของปุ่ม */
+        height: 400px; /* ปรับความสูงของปุ่ม */
+        padding: 0.5em 1em; /* ปรับ Padding ของปุ่ม */
+    }
+}
+
+
 </style>
 <body>
     <div class="video-container">
         <video src="/emoji-minesweeper-gh-pages/wall.mp4" autoplay loop muted></video>
         <button class="classic" onclick="window.location.href='/emoji-minesweeper-gh-pages/index.html'">Classic</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="Countdown">Countdown</button>
+        <button class="countdown">Countdown</button>
     </div>
 </body>
 </html>
