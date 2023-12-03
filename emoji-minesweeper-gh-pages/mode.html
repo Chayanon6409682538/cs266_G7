@@ -34,8 +34,8 @@
 .classic, .countdown {
     font-family: "Open Sans", sans-serif;
     top: 20%;
-    left: 32%;
-    font-size: 48px;
+    left: 28%;
+    font-size: 30px;
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
@@ -53,7 +53,7 @@
 .classic:active, .countdown:active {
     box-shadow: 0px 0px 0px 0px;
     top: 25%;
-    left: 32%;
+    left: 30%;
 }
 
 /* Media Query for screens with width greater than or equal to 788px */
@@ -64,14 +64,24 @@
         padding: 0.5em 1em; /* ปรับ Padding ของปุ่ม */
     }
 }
-
+.button-icon {
+        max-width: 100%;
+        max-height: 100%;
+    }
 
 </style>
 <body>
     <div class="video-container">
         <video src="/emoji-minesweeper-gh-pages/wall.mp4" autoplay loop muted></video>
-        <button class="classic" onclick="window.location.href='/emoji-minesweeper-gh-pages/index.html'">Classic</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="countdown">Countdown</button>
+        <button class="classic" onclick="window.location.href='/emoji-minesweeper-gh-pages/index.html'">
+            <img class="button-icon" src="/emoji-minesweeper-gh-pages/mine_sweeper_-_13-removebg-preview.png" alt="Button Icon">
+            Classic
+        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="countdown"onclick="window.location.href='/emoji-minesweeper-gh-pages/countdown.html'">
+            <img class="button-icon" src="/emoji-minesweeper-gh-pages/mine_sweeper_-_12-removebg-preview.png" alt="Button Icon">
+            <br>
+            Countdown
+        </button>
     </div>
 </body>
 </html>
