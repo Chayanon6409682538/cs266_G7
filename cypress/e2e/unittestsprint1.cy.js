@@ -1,12 +1,12 @@
 describe('open HTML', () => {
   it('outdistance', () => {
-    cy.visit('http://localhost:8000/')
+    cy.visit('http://localhost:8000/emoji-minesweeper-gh-pages/')
     cy.wait(1000);
   })
 })
 describe('Setting Button', () => {
   it('outdistance ', () => {
-    cy.visit('http://localhost:8000/')
+    cy.visit('http://localhost:8000/emoji-minesweeper-gh-pages/')
     cy.wait(1000);
     cy.get('.js-settings').click();
     cy.wait(500);
@@ -14,7 +14,7 @@ describe('Setting Button', () => {
 }) 
 describe('Easy Button', () => {
   it('Click Easy', () => {
-    cy.visit('http://localhost:8000/')
+    cy.visit('http://localhost:8000/emoji-minesweeper-gh-pages/')
     cy.wait(500);
     cy.get('.js-settings').click();
     cy.wait(500);
@@ -24,7 +24,7 @@ describe('Easy Button', () => {
 }) 
 describe('Normal Button', () => {
   it('Click Normal', () => {
-    cy.visit('http://localhost:8000/')
+    cy.visit('http://localhost:8000/emoji-minesweeper-gh-pages/')
     cy.wait(500);
     cy.get('.js-settings').click();
     cy.wait(500);
@@ -34,7 +34,7 @@ describe('Normal Button', () => {
 }) 
 describe('Hard Button', () => {
   it('Click Hard', () => {
-    cy.visit('http://localhost:8000/')
+    cy.visit('http://localhost:8000/emoji-minesweeper-gh-pages/')
     cy.wait(500);
     cy.get('.js-settings').click();
     cy.wait(500);
@@ -44,7 +44,7 @@ describe('Hard Button', () => {
 })  
 describe('Custom Button', () => {
   it('Click Custom', () => {
-    cy.visit('http://localhost:8000/')
+    cy.visit('http://localhost:8000/emoji-minesweeper-gh-pages/')
     cy.wait(500);
     cy.get('.js-settings').click();
     cy.wait(500);
@@ -54,7 +54,7 @@ describe('Custom Button', () => {
 })
 describe('Easy Button value', () => {
   it('Click Easy_value', () => {
-    cy.visit('http://localhost:8000/')
+    cy.visit('http://localhost:8000/emoji-minesweeper-gh-pages/')
     cy.wait(500);
     cy.get('.js-settings').click();
     cy.wait(500);
@@ -70,7 +70,7 @@ describe('Easy Button value', () => {
 })
 describe('Normal Button value', () => {
   it('Click Normal_value', () => {
-    cy.visit('http://localhost:8000/')
+    cy.visit('http://localhost:8000/emoji-minesweeper-gh-pages/')
     cy.wait(500);
     cy.get('.js-settings').click();
     cy.wait(500);
@@ -86,7 +86,7 @@ describe('Normal Button value', () => {
 })
 describe('Hard Button value', () => {
   it('Click Hard_value', () => {
-    cy.visit('http://localhost:8000/')
+    cy.visit('http://localhost:8000/emoji-minesweeper-gh-pages/')
     cy.wait(500);
     cy.get('.js-settings').click();
     cy.wait(500);
@@ -102,7 +102,7 @@ describe('Hard Button value', () => {
 })
 describe('Custom alert rows*cell != 2500', () => {
   it('Click Custom_row*cell', () => {
-    cy.visit('http://localhost:8000/')
+    cy.visit('http://localhost:8000/emoji-minesweeper-gh-pages/')
     cy.wait(500);
     cy.get('.js-settings').click();
     cy.wait(500);
@@ -119,7 +119,7 @@ describe('Custom alert rows*cell != 2500', () => {
 })
 describe('Custom alert bombs!> rows*cells', () => {
   it('Click Custom_bombs', () => {
-    cy.visit('http://localhost:8000/')
+    cy.visit('http://localhost:8000/emoji-minesweeper-gh-pages/')
     cy.wait(500);
     cy.get('.js-settings').click();
     cy.wait(500);
@@ -133,7 +133,7 @@ describe('Custom alert bombs!> rows*cells', () => {
 })
 describe('click save and return', () => {
   it('Click save_return', () => {
-    cy.visit('http://localhost:8000/')
+    cy.visit('http://localhost:8000/emoji-minesweeper-gh-pages/')
     cy.wait(500);
     cy.get('.js-settings').click();
     cy.wait(500);

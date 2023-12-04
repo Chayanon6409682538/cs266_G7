@@ -21,7 +21,7 @@ function initializeGame() {
     document.querySelector('.js-settings').addEventListener('click', settingsClick);
   }
   function easyButtonClick() {
-    clearInterval(game.timer);
+    //clearInterval(game.timer);
     //var Game = require('./game.js')
     emojiset = document.getElementById('emojiset').value.split(' ');
     const cols = 10;
@@ -87,6 +87,7 @@ function initializeGame() {
   
   // เรียกใช้ฟังก์ชัน initializeGame เมื่อโหลดหน้าเว็บ
   document.addEventListener('DOMContentLoaded', initializeGame);
+
 
   
   
