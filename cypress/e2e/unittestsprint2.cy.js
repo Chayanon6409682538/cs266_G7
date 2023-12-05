@@ -12,7 +12,7 @@ describe('Start Button', () => {
   }) 
 
 describe('Guide Button', () => {
-    it('Click Button Start' , () => {
+    it('Click Button Guide' , () => {
       cy.wait(1000);
       cy.visit('http://localhost:8000/menu.html')
       cy.wait(1000);
